@@ -1,0 +1,95 @@
+*{
+    font-family: monospace;
+    text-align: center;
+    margin: auto;
+}
+body, .bg-img{
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img{
+    border-radius:50px ;
+}
+.bg-img{
+    background-position: center;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    z-index: -1;
+}
+.container ,.bg-img{
+    border-color: rgba(0,0,0,.3);
+    border-width:5px;
+    border-style:  none outset outset none;
+    border-radius: 40px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 500px;
+    box-sizing: border-box;
+
+}
+.profile{
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    border-image-slice: fill;
+    border: 1px solid rgba(0,0,0,.3);
+    border-radius:50% ;
+}
+.profile img{
+    border-radius:50% ;
+    width: inherit;
+    height: inherit;
+}
+p{
+    color: lightgray;
+    margin: 40px 0 20px;
+    font-size:15px;
+    color: white;
+    display:block;
+}
+.socials{
+    padding: 5px;
+    text-align: center;
+    background-color: #b2b2b2;
+    background-color: rgba(0,0,0,.3);
+}
+.socials img{
+    margin-left: 25px;
+    margin-right: 25px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+
+}
+a:hover{
+    border-bottom: 2px solid white;
+}
+div.typewriter{
+    width: 230px;
+}
+.typewriter p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
