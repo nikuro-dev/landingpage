@@ -93,9 +93,10 @@ div.typewriter{
   from, to { border-color: transparent }
   50% { border-color: orange; }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   body {
     /* The file size of this background image is 93% smaller
      * to improve page load speed on mobile internet connections */
-    background-image: url(../img/bformobile.png);
+      background-color: rgb(16,14,14);
+      background-image: none;
   }
